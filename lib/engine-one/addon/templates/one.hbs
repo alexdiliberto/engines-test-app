@@ -1,0 +1,12 @@
+<h3>Route One</h3>
+<nav>
+  {{#link-to-external 'home'}}go back home{{/link-to-external}}
+</nav>
+<hr>
+
+{{#x-select value=2 as |xs|}}
+  {{#xs.option value=1}}Active{{/xs.option}}
+  {{#xs.option value=2}}Inactive{{/xs.option}}
+{{/x-select}}
+
+{{outlet}}

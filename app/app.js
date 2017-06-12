@@ -5,12 +5,27 @@ import config from './config/environment';
 
 let App;
 
-Ember.MODEL_FACTORY_INJECTIONS = true;
-
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+
+  engines: {
+    engineOne: {
+      dependencies: {
+        externalRoutes: {
+          home: 'index',
+        }
+      }
+    },
+    engineTwo: {
+      dependencies: {
+        externalRoutes: {
+          one: 'engine-one',
+        }
+      }
+    }
+  }
 });
 
 loadInitializers(App, config.modulePrefix);

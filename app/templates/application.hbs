@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Large Consuming App Header</h1>
+<nav>
+  {{#link-to 'index'}}home{{/link-to}}&nbsp;|&nbsp;
+  {{#link-to 'engine-one'}}engine-one{{/link-to}}&nbsp;|&nbsp;
+  {{#link-to 'engine-two'}}engine-two{{/link-to}}
+</nav>
+<hr>
 
 {{outlet}}

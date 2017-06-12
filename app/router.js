@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.mount('engine-one');
+  this.mount('engine-two');
 });
 
 export default Router;

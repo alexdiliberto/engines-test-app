@@ -1,0 +1,12 @@
+{
+  "name": "engine-two",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*",
+    "emberx-select": "3.0.0"
+  }
+}
